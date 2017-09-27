@@ -12,7 +12,7 @@ public class MemberShipSet<T> implements IMembershipSet<T> {
     }
 
     @Override
-    public boolean contains(Object o) {
+    public boolean isMember(Object o) {
         return Arrays.asList(A).contains(o);
     }
 }

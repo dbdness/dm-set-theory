@@ -8,7 +8,7 @@ public class Main {
         String[] members = {"Danny", "Kim", "Alexander"};
         MemberShipSet memberShipSet = new MemberShipSet(members);
 
-        System.out.println(memberShipSet.contains("Kim"));
+        System.out.println(memberShipSet.isMember("Kim"));
 
     }
 }
