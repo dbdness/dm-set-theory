@@ -2,8 +2,7 @@ package com.company;
 
 import java.util.Set;
 
-public interface MembershipSet<T> extends Set<T> {
-    @Override
+public interface IMembershipSet<T> {
     boolean contains(Object o);
 
 
