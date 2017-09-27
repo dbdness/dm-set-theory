@@ -16,6 +16,6 @@ public class Main {
         IntersectionSet intersectionSet = new IntersectionSet(coolCars, affordableCars);
         System.out.println("Intersects: " + intersectionSet.intersects("Tesla"));
 
-        
+
     }
 }

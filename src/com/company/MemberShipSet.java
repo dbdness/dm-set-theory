@@ -3,15 +3,14 @@ package com.company;
 import java.util.Arrays;
 import java.util.Set;
 
-public class MemberShipSet<T> implements IMembershipSet<T> {
+public class MemberShipSet {
 
-    T[] A;
+    Object[] A;
 
-    public MemberShipSet(T[] A){
+    public MemberShipSet(Object[] A){
         this.A = A;
     }
 
-    @Override
     public boolean isMember(Object o) {
         return Arrays.asList(A).contains(o);
     }

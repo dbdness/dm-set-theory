@@ -2,17 +2,16 @@ package com.company;
 
 import java.util.Arrays;
 
-public class IntersectionSet<T> implements IIntersectionSet<T> {
+public class IntersectionSet {
 
-    T[] A;
-    T[] B;
+    Object[] A;
+    Object[] B;
 
-    public IntersectionSet(T[] A, T[] B){
+    public IntersectionSet(Object[] A, Object[] B){
         this.A = A;
         this.B = B;
     }
 
-    @Override
     public boolean intersects(Object o) {
         return Arrays.asList(A).contains(o) && Arrays.asList(B).contains(o);
 
