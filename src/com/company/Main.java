@@ -18,7 +18,10 @@ public class Main {
 
 
         UnionSet unionSet = new UnionSet(coolCars, affordableCars);
-        System.out.println("Union: " + unionSet.union("Citroen"));
+        System.out.println("Union: " + unionSet.isUnion("BMW"));
+
+        DifferenceSet differenceSet = new DifferenceSet(coolCars, affordableCars);
+        System.out.println("Differences: " +  differenceSet.difference("Audi"));
 
 
     }

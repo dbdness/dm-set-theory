@@ -11,7 +11,7 @@ public class UnionSet {
         this.B = B;
     }
 
-    public boolean union(Object o) {
+    public boolean isUnion(Object o) {
         return Arrays.asList(A).contains(o) || Arrays.asList(B).contains(o);
 
     }
