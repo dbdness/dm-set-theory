@@ -5,7 +5,7 @@ import java.util.Set;
 
 public class MemberShipSet {
 
-    Object[] A;
+    private Object[] A;
 
     public MemberShipSet(Object[] A){
         this.A = A;

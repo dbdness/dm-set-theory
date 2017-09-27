@@ -4,8 +4,8 @@ import java.util.Arrays;
 
 public class IntersectionSet {
 
-    Object[] A;
-    Object[] B;
+    private Object[] A;
+    private Object[] B;
 
     public IntersectionSet(Object[] A, Object[] B){
         this.A = A;

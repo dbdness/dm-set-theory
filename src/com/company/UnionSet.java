@@ -3,8 +3,8 @@ package com.company;
 import java.util.Arrays;
 
 public class UnionSet {
-    Object[] A;
-    Object[] B;
+    private Object[] A;
+    private Object[] B;
 
     public UnionSet(Object[] A, Object[] B){
         this.A = A;

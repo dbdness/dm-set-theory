@@ -23,6 +23,9 @@ public class Main {
         DifferenceSet differenceSet = new DifferenceSet(coolCars, affordableCars);
         System.out.println("Differences: " +  differenceSet.difference("Audi"));
 
+        ComplementSet complementSet = new ComplementSet(members);
+        System.out.println("Complement: " + complementSet.complement("Hejsa"));
+
 
     }
 }

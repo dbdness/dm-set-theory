@@ -3,8 +3,8 @@ package com.company;
 import java.util.Arrays;
 
 public class DifferenceSet {
-    Object[] A;
-    Object[] B;
+    private Object[] A;
+    private Object[] B;
 
     public DifferenceSet(Object[] A, Object[] B){
         this.A = A;
