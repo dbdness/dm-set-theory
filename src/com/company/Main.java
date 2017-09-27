@@ -17,5 +17,9 @@ public class Main {
         System.out.println("Intersects: " + intersectionSet.intersects("Tesla"));
 
 
+        UnionSet unionSet = new UnionSet(coolCars, affordableCars);
+        System.out.println("Union: " + unionSet.union("Citroen"));
+
+
     }
 }
