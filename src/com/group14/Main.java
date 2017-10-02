@@ -6,7 +6,6 @@ public class Main {
 
     public static void main(String[] args) {
         //Set handling
-
         String[] members = {"Danny", "Kim", "Alexander"};
         MemberShipSet memberShipSet = new MemberShipSet(members);
 
@@ -41,6 +40,12 @@ public class Main {
 
     }
 
+    /**
+     * Here we determine if set A is a subset of set B. That is, if A contains some (or all) of the elements in B.
+     * @param a Set A
+     * @param b Set B
+     * @return -1, if A is a subset of B. Returns -2 if it isn't.
+     */
     private static int determineSubset(String[] a, String[] b) {
         for (String element : b) {
             if (Arrays.asList(a).contains(element)) return -1;
@@ -48,11 +53,23 @@ public class Main {
         return -2;
     }
 
+    /**
+     * Here we determine if set A is a equals to set B. That is, if the two sets contain identical elements.
+     * @param a Set A
+     * @param b Set B
+     * @return 0, if the sets are equal. Returns -2 if they aren't.
+     */
     private static int determineEquals(String[] a, String[] b) {
         if (Arrays.equals(a, b)) return 0;
         return -2;
     }
 
+    /**
+     * Here we determine if set A is a superset to of B. That is, if set A contains all elements in set B, and then some.
+     * @param a Set A
+     * @param b Set B
+     * @return 1, if A is a superset of B. Return -2 if it isn't.
+     */
     private static int determineSuperset(String[] a, String[] b){
         if(Arrays.asList(a).containsAll(Arrays.asList(b)) && a.length > b.length) return 1;
         return -2;
